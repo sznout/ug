@@ -1,6 +1,6 @@
 # .appveyor.yml
 version: 1.0.{build}
-image: macos-bigsur
+image: macos-ventura
 build_script:
   - echo "Starting build on macOS Ventura..."
   - echo "Running sw_vers to get macOS version:"
