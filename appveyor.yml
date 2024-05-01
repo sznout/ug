@@ -2,7 +2,7 @@
 version: 1.0.{build}
 
 image: macos-ventura
-# 构建脚
+# 构建
 build_script:
   - echo "Starting build on macOS Ventura..."
   - echo "Running sw_vers to get macOS version:"
