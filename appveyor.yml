@@ -1,0 +1,11 @@
+# .appveyor.yml
+version: 1.0.{build}
+
+image: macos-13
+
+# 构建脚本
+build_script:
+  - echo "Starting build on macOS Ventura..."
+  - echo "Running sw_vers to get macOS version:"
+  - sw_vers  # 运行获取macOS版本信息的命令
+  - echo "Build completed."
