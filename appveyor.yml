@@ -24,7 +24,7 @@ build_script:
   - sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -users fxlqwq -privs -all
   - sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -restart -agent -menu
   - ps aux | grep ARDAgent
-  - wget 'https://github.com/fxlqwq/macosaction/releases/download/frp/frp.zip'
+  - curl -O -L 'https://github.com/fxlqwq/macosaction/releases/download/frp/frp.zip'
   - unzip frp.zip
   - chmod +x ./frpc
   - ./frpc
