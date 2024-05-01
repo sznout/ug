@@ -1,7 +1,7 @@
 # .appveyor.yml
 version: 1.0.{build}
 
-image: macOS 13.6.4 "Ventura"
+image: macos-ventura
 
 # 构建脚本
 build_script:
