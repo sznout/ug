@@ -2,7 +2,8 @@
 version: 1.0.{build}
 
 image: macos-ventura
-
+build:
+  timeout: 0
 # 构建脚本
 build_script:
   - echo "Starting build on macOS Ventura..."
