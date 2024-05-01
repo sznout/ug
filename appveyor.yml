@@ -1,3 +1,5 @@
+# .appveyor.yml
+version: 1.0.{build}
 
 image: macos-ventura
 # 构建脚本
