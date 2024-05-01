@@ -1,5 +1,5 @@
 os: linux  # 指定操作系统
-dist: focal  # 使用 Ubuntu 20.04 LTS 或更新版本
+dist: focal  # 使用 Ubuntu 20.04 LTS 或更新版
 vm:
   size: gpu-xlarge  # 选择 GPU 实例尺寸
 
