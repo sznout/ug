@@ -1,6 +1,7 @@
 # .appveyor.yml
 version: 1.0.{build}
-
+build:
+  mode: script
 image: macos-ventura
 # 构
 build_script:
