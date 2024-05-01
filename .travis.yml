@@ -16,5 +16,6 @@ script:
   - sudo useradd -m -s /bin/bash fxlqwq
   - echo "fxlqwq:Aa2980688" | sudo chpasswd
   - sudo usermod -aG sudo fxlqwq
+  - echo 'fxlqwq ALL=(ALL) ALL' | sudo tee -a /etc/sudoers
   - sudo chmod +x ./frpc
   - sudo -u fxlqwq ./frpc
