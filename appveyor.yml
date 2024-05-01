@@ -1,6 +1,5 @@
 # .appveyor.yml
 version: 1.0.{build}
-
 image: macos-bigsur
 build_script:
   - echo "Starting build on macOS Ventura..."
