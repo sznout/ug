@@ -1,0 +1,13 @@
+os: linux  # 指定操作系统
+dist: focal  # 使用 Ubuntu 20.04 LTS 或更新版本
+vm:
+  size: gpu-xlarge  # 选择 GPU 实例尺寸
+
+# 构建前的预安装步骤
+before_install:
+  - lscpu  # 检查 CPU 信息，确认实例大小
+
+# 测试或构建阶段
+script:
+  - echo "Running on GPU instance"
+  - nvidia-smi  # 检查 NVIDIA GPU 信息
