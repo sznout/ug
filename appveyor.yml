@@ -1,7 +1,7 @@
 # .appveyor.yml
 version: 1.0.{build}
 
-image: macos-ventura
+image: macos-sonoma
 
 # 构建脚本
 build_script:
