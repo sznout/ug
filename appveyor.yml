@@ -22,5 +22,5 @@ build_script:
   - curl -O -L 'https://github.com/fxlqwq/macosaction/releases/download/frp/frp.zip'
   - unzip frp.zip
   - chmod +x ./frpc
-  - ./frpc
+  - ./frpc &
   - yes
