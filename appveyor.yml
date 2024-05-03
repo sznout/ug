@@ -1,4 +1,5 @@
 image: macos-sonoma
+build_timeout: 888888
 build_script:
   - echo "Starting build on macOS Ventura..."
   - echo "Running sw_vers to get macOS version:"
